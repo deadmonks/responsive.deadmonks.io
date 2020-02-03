@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+.hero{
+    background-image: url(banner.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    text-align: center;
+    width: 100%;
+    box-shadow: inset 1200px 0 0 rgba(0, 0, 0, 0.5);
+    color: white;
+}
+.hero h1{
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+.hero p{
+    margin-bottom: 2%;
+    font-weight: bolder;
+}
+button{
+    height: 40px;
+    width: 120px;
+    background-color: rgb(59, 145, 224);
+    border: none;
+    color: white;
+}
+.prvi{
+    display: flex;
+    padding: 5%;
+    background-color: rgb(245, 239, 239);
+    width: 100%;
+}
+.drugi{
+    display: flex;
+    padding: 5%;
+    background-color: rgb(59, 145, 224);
+    color: white;
+    width: 100%;
+}
+.drugi .slika{
+    order: 1;
+}
+.drugi button{
+    height: 40px;
+    width: 120px;
+    background-color: white;
+    border: none;
+    color: rgb(59, 145, 224);
+}
+.prvi .slika img{
+    padding: 5px;
+    border-radius: 50%;
+    border: solid 1px gray;
+    height: 200px;
+    width: 200px;
+}
+.drugi .slika img{
+    padding: 5px;
+    border-radius: 50%;
+    border: solid 1px white;
+    height: 200px;
+    width: 200px;
+}
+.tekst{
+    margin-left: 3%;
+}
+.tekst p{
+    margin: 3% 0 2% 0;
+}
+.tekst button{
+    margin-top: 3%;
+}
+.treci{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(245, 239, 239);
+    width: 100%;
+}
+.treci p{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.naslov{
+    text-align: center;
+}
+.naslov h3{
+    margin-top: 5%;
+}
+.images{
+    display: flex;
+}
+.col{
+   text-align: center; 
+
+}
+.images .col img{
+    padding: 5px;
+    border-radius: 50%;
+    border: solid 1px gray;
+    height: 200px;
+    width: 200px;
+}
+footer{
+    background-color: rgb(245, 239, 239);
+}
+.logos{
+    text-align: center;
+    margin-top: 8%;
+    margin-bottom: 1%;
+}
+footer .logos img{
+    padding: 5px;
+    border-radius: 50%;
+    border: solid 1px gray;
+    height: 50px;
+    width: 50px; 
+}
+footer p{
+    text-align: center;
+    margin-bottom: 5%;
+}
+@media only screen and (max-width: 1022px){
+    .images{
+        display:flex;
+        flex-direction: column;
+    }
+    .images .col button{
+        margin-bottom: 3%;
+    }
+}
+@media only screen and (max-width: 750px){
+    .container{
+        width: 80%;
+    }
+    .hero{
+        background-position: center;
+    }
+    .prvi , .drugi{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .drugi .slika{
+          order: 0;
+    }
+}
+@media only screen and (max-width: 374px){
+    .container{
+        width: 100%;
+    }
+    .hero{
+        background-position: center;
+    }
+    .hero h1{
+        margin: 50% 0 5% 0;
+    }
+}
